@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Task Manager</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Student Task Manager</h1>
-  <p>Welcome! Your tasks will appear here.</p>
-    <form id="task-form">
-    <label for="task-title">Task Title</label>
-    <input type="text" id="task-title" placeholder="Enter task title" required>
+    <div class="container">
+        <h1>Student Task Manager</h1>
+        <p>Welcome! Your tasks will appear here.</p>
 
-    <label for="task-description">Description</label>
-    <textarea id="task-description" placeholder="Enter task description"></textarea>
+        <!-- Task Input Form -->
+        <form id="task-form">
+            <label for="task-title">Task Title</label>
+            <input type="text" id="task-title" placeholder="Enter task title" required>
 
-    <button type="submit">Add Task</button>
-  </form>
-  <script src="script.js"></script>
+            <label for="task-description">Description</label>
+            <textarea id="task-description" placeholder="Enter task description"></textarea>
+
+            <button type="submit">Add Task</button>
+        </form>
+
+        <!-- Search Input Box (Issue #3 ke liye) -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search tasks by title...">
+        </div>
+
+        <!-- Task List Container -->
+        <div id="task-list"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
